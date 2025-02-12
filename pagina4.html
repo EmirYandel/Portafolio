@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THIRD EVIDENCE</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="Game.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>THIRD EVIDENCE</h1>
+    </header>
+
+    <main>
+        <div class="game-container">
+            <h2>Elige la dificultad:</h2>
+            <select id="difficulty" onchange="setDifficulty()">
+                <option value="easy">Fácil</option>
+                <option value="medium">Medio</option>
+                <option value="hard">Difícil</option>
+            </select>
+
+            <h2>Traduce la palabra:</h2>
+            <p id="word">Haz clic en "Iniciar Juego"</p>
+            <input type="text" id="answer" placeholder="Escribe la traducción" disabled>
+            <button onclick="checkAnswer()">Enviar</button>
+            <button onclick="startGame()">Iniciar Juego</button>
+            <p id="feedback"></p>
+            <p>Puntuación: <span id="score">0</span></p>
+            <p>Tiempo restante: <span id="timer">30</span> segundos</p>
+        </div>
+
+        <div class="word-list">
+            <h2>Lista de palabras y traducciones</h2>
+            <ul id="wordList"></ul>
+        </div>
+    </main>
+    <a><button onclick="window.location.href='pagina3.html'">SECOND EVIDENCE</button>
+    <footer>
+    </footer>
+
+</body>
+</html>
